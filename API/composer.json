@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Model\\Classe\\": "src/Model/Class",
+      "Model\\Dao\\": "src/Model/Dao",
+      "Util\\": "src/Util",
+      "Controller\\": "src/Controller"
+    }
+  }
+}

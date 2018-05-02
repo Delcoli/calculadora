@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Relatório de operações</title>
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="../js/permissao.js"></script>
+    <script type="text/javascript">
+        logado();
+    </script>
+
+</head>
+
+<body class="fundo-cinza">
+<div class="container">
+    <div class="row">
+        <div class="">
+            <div class="relatorio-panel panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">Relatório de operações</h5>
+                    </div>
+
+                    <div id="erro" class="alert alert-danger oculto">
+                        Erro ao listar dados!
+                    </div>
+
+                    <form>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label label-periodo" for="dataInicial">Período de
+                                    operações</label>
+                                <div class="col-sm-2">
+                                    <input class="form-control " type="date" id="dataInicial"
+                                           autofocus>
+                                </div>
+
+                                <label class="col-sm-1 control-label label-periodo-a" for="dataFinal">a</label>
+                                <div class="col-sm-2">
+                                    <input class="form-control " type="date" id="dataFinal">
+                                </div>
+
+                                <div class="col-sm-5" align="center">
+                                    <button id="filtrar-operacoes" class="btn btn-success  botao-centralizado">Recuperar operações</button>
+                                    <a href="calculadora.html" class="btn btn-danger botao-centralizado">Retornar a
+                                        calculadora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-body">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="coluna-operacao">Data da operação</th>
+                            <th>Expressão</th>
+                            <th class="coluna-resultado">Resultado</th>
+                            <th>Usuário</th>
+                        </tr>
+                        </thead>
+                        <tbody id="dados">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+
+</body>
+
+</html>

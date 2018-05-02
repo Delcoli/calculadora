@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cadastro de usuário</title>
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="fundo-cinza">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="centralizar-panel panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">Cadastro de usuário</h5>
+                        <h3 class="panel-title">Informe os dados do usuário</h3>
+                    </div>
+                </div>
+
+                <div id="sucesso" class="alert alert-success oculto">
+                    <strong>Perfeito!</strong>Você acabou de inserir um usuário!
+                </div>
+
+                <div id="erro" class="alert alert-danger oculto">
+                    Erro ao inserir dados do usuário!
+                </div>
+
+                <div class="panel-body">
+                    <form>
+                        <fieldset>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Nome" name="nome" type="text" id="nome">
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" placeholder="E-mail" name="email" type="email" id="email"
+                                       required>
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Informe a senha" name="password" id="senha"
+                                       type="password" required>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="login.html" class="btn btn-danger  botao-centralizado">Retornar ao login</a>
+                                <button id="gravar-usuario" class="btn btn-success botao-centralizado">Gravar</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/app.js"></script>
+
+</body>
+
+</html>

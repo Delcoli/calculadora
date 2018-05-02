@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Calculadora</title>
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="../js/permissao.js"></script>
+    <script type="text/javascript">
+        logado();
+    </script>
+
+</head>
+
+<body class="fundo-cinza">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="calculadora-panel panel panel-default">
+                <div class="panel-heading">
+                    <h5 class="panel-title">Calculadora</h5>
+                </div>
+                <div class="panel-body">
+                    <form>
+
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Expressão" name="expressao" id="expressao"
+                                   readonly="readonly">
+                        </div>
+
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Resultado" name="resultado" id="resultado"
+                                   readonly="readonly">
+                        </div>
+
+                        <div class="btn-group-lg linha-botao">
+                            <button id="parentes-aberto" type="button" class="btn  btn-default btn-operacao">(</button>
+                            <button id="parentes-fechado" type="button" class="btn  btn-default btn-operacao">)</button>
+                            <button id="raiz-quadrada" type="button" class="btn  btn-default btn-operacao">&radic;
+                            </button>
+                            <button id="divisao" type="button" class="btn  btn-default btn-operacao"
+                                    style="font-weight: 700">&divide;
+                            </button>
+                        </div>
+
+                        <div class="btn-group-lg linha-botao">
+                            <button id="sete" type="button" class="btn btn-info ">7</button>
+                            <button id="oito" type="button" class="btn btn-info ">8</button>
+                            <button id="nove" type="button" class="btn btn-info ">9</button>
+                            <button id="multiplicacao" type="button" class="btn  btn-default btn-operacao">x</button>
+                        </div>
+                        <div class="btn-group-lg linha-botao">
+                            <button id="quatro" type="button" class="btn btn-info ">4</button>
+                            <button id="cinco" type="button" class="btn btn-info ">5</button>
+                            <button id="seis" type="button" class="btn btn-info ">6</button>
+                            <button id="menos" type="button" class="btn btn-default btn-operacao"
+                                    style="font-weight: 700">-
+                            </button>
+                        </div>
+                        <div class="btn-group-lg linha-botao">
+                            <button id="um" type="button" class="btn btn-info ">1</button>
+                            <button id="dois" type="button" class="btn btn-info ">2</button>
+                            <button id="tres" type="button" class="btn btn-info ">3</button>
+                            <button id="soma" type="button" class="btn btn-default btn-operacao">+</button>
+                        </div>
+                        <div class="btn-group-lg linha-botao">
+                            <button id="zero" type="button" class="btn btn-info ">0</button>
+                            <button id="ponto" type="button" class="btn btn-info ">,</button>
+                            <button id="percentual" type="button" class="btn  btn-default btn-operacao">%</button>
+                            <button id="igual" type="button" class="btn btn-success ">=</button>
+                        </div>
+
+                        <div class="btn-group-lg linha-botao">
+                            <button id="limpar" type="button" class="btn  btn-default btn-operacao btn-maior">Limpar</button>
+                            <button id="remover" type="button" class="btn  btn-default btn-operacao btn-maior">Remover</button>
+                        </div>
+
+                        <div class="btn-group-lg linha-botao">
+                            <a href="login.html" class="btn btn-danger btn-maior">Sair</a>
+                            <a href="relatorio.html" class="btn btn-warning btn-maior">Relatório</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+
+</body>
+
+</html>
